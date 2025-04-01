@@ -1,0 +1,8 @@
+typescript evita bugs com suas variaveis tipadas.
+o TS é só para programaçao, a maquina le ele traduzido pra js
+mantido pela ms
+
+TODO projeto TS necessita de um arquivo configuraçoes para estabelecer mudanças e explicar que aqui há um programa javascript usando tsc --init NA PASTA DO TS
+essas questoes da configuraçoes nao deu muito certo, tentar ocntinuar sem
+
+tsc-w ele atualiza automaticamente oq ce colocar no ts pro js
