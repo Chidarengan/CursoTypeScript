@@ -181,3 +181,68 @@ class User {
 
 const zeca = new User("Zéca", "Admin", true);
 console.log(zeca);
+
+//interfaces em classes (o I do inicio é maisculo pra entender q é uma interface) entendi nada
+interface IVheicle{
+    brand: string;
+    showBrand(): void;
+}
+
+class Car implements IVheicle{
+
+    brand
+    wheels
+
+    constructor (brand: string, wheels: number){
+        this.brand = brand;
+        this.wheels = wheels;
+    }
+
+    showBrand(): void {
+        console.log(`A marca do carro é ${this.brand}`);
+    }
+
+}
+
+const fusca = new Car("Volkswagen", 4);
+fusca.showBrand();
+
+// herança. é a capacidade de uma classe herdar propriedades e métodos de outra classe.
+class SuperCar extends Car{
+    engine
+
+    constructor(brand: string, wheels: number, engine: number){
+        super(brand, wheels);
+        this.engine = engine;
+    }
+}
+
+const a4 = new SuperCar("Audi", 4, 2.0);
+console.log(a4);
+a4.showBrand();
+
+// decorators.  
+
+function BaseParameters(){
+    return function<T extends {new(...args: any[]): {}}>(constructor: T){
+        return class extends constructor {
+            id = Math.random();
+            createAt = new Date();
+        }
+
+    }
+}
+
+// o @ no TS é sempre um decorator
+@BaseParameters
+class Person{
+    name
+
+    constructor(name: string){
+        this.name = name;
+    }
+
+}
+
+const sam = new Person("Sam");
+console.log(sam);
