@@ -22,7 +22,7 @@ let array: number[]=[];
 // nome = "1"; //era pra ele crizar comigo colocando esse 1 como string aqui
 array.push(1);
 
-console.log(somar(13, 99)); 
+// console.log(somar(13, 99)); 
 //se deixar vazio ele da erro no ts, o js nao acusa o erro 
 
 //o typescript é menos interessante trabalhando sozinho, exceto pra voce praticar e trabalhar com projetos maiores.
