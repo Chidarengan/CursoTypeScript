@@ -1,7 +1,8 @@
 const nome ="Bruno";
 const canal = "CFB Cursos";
+const curso = "TypeScript";
 
-console.log(` ${nome}, ${canal} `);
+console.log(` ${nome}, ${canal}, ${curso} `);
 
-
-//interrompido em 7:24 https://www.youtube.com/watch?v=m6rkw8ITnBY&list=PLx4x_zx8csUhtPMrkiGvFJVE5LX8Qat5s&index=2
+//quando tiver aberto a pasta do js e do ts ele avisa de erro pq ele ta encontrando as mesmas variaveis nas pastas mas isso nao da ruim nao NO TS JS.
+// tsc = typescript compile (ainda n entendo mto bem oq é compile)
